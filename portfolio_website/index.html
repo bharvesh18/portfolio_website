@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharvesh Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1d466d31a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/portfolio_logo.png" class="logo">
+                <ul id="sitemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="hero-section">
+            <div class="header-text">
+                <p>Data Analyst, Data Scientist and Web Developer</p>
+                <h1>Hi, I'm <span class="span-text">Bharvesh</span><br> Dabas From India</h1>
+            </div>
+            <div class="header-image">
+                <div><img src="Images/me.png" class="header-image-me"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <div class="about-image">
+                   <div><img src="Images/about_me_img.png" width="440px" class="header-image-me"></div>
+                        </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I’m Bharvesh Dabas, a Data Analyst, aspiring Data Scientist, and Web Developer with a strong foundation in computer science and problem-solving. I recently completed my Bachelor of Computer Applications (BCA) and am currently pursuing my Master of Computer Applications (MCA).
+
+I enjoy working at the intersection of data, technology, and real-world impact. My skill set includes Python, SQL, Excel, Power BI, Machine Learning basics, along with React, Next.js, and Firebase for building modern web applications. I’ve built projects ranging from secure document-sharing platforms to data-driven analytics dashboards.
+
+I’m deeply committed to continuous learning and self-improvement, and I’m actively working towards becoming a top-notch professional in data and AI-driven systems. I’m currently seeking opportunities where I can learn, contribute, and grow while solving meaningful problems.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>ReactJS | NextJS | MongoDB</li>
+                            <li><span>Data Analytics</span><br>Excel | PowerBI | MySQL</li>
+                            <li><span>Data Science</span><br>Machine Learning | Python</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Internship - Unified Mentor</span><br>Web Developer</li>
+                            <li><span>Internship - SkillX</span><br>Research Analyst</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>Bachelor of Computer Applications</li>
+                            <li><span>2027</span><br>Master of Computer Applicationst</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-chart-area"></i>
+                    <h2>Data Analyst</h2>
+                    <p>Using my skills in Excel and PowerBI, I can derive insights from data and present in visually intuitive way.</p> 
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Data Scientist</h2>
+                    <p>Using my knowledge of machine learning and Python, I can write scripts to find interesting patterns in data.</p> 
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/project_attrition.png" alt="" height="280px">
+                    <div class="layer">
+                        <h3>HR Attrition Analytics</h3>
+                        <p>Deatiled analysis of reasons behind employee attrition at IBM, and machine learning model for attrition prediction.</p>
+                        <a href="https://github.com/bharvesh18/hr_attrition_data_analysis_and_machine_learning/tree/main"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/loan_project.jpg" alt="">
+                    <div class="layer">
+                        <h3>Loan Predictor</h3>
+                        <p>Analysis of bank customers to find ot which factors affect loan paymment and a machine learning model to predict loan repayment by new applicants.</p>
+                        <a><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/linktree.jpg" alt="">
+                    <div class="layer">
+                        <h3>Linktree</h3>
+                        <p>A one stop for all your links.</p>
+                        <a><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-message"></i>dabasbhavesh@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+917428847578</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/bharvesh-dabas-902bb62b9/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/bharvesh18"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Bharvesh_Resume.pdf" class="btn btn2" download="">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="SUBMIT_TO_GOOGLE">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email">
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sitemenu=document.getElementById("sitemenu")
+        function openmenu(){
+            sitemenu.style.right="0";
+        }
+        function closemenu(){
+            sitemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbzesqXd6HkFBvy3tgjaDn_ml8mQCMWKaXD5FJCHkfSW-HrKG3M5MomNqSimre8lwJGr/exec'
+	const form = document.forms['SUBMIT_TO_GOOGLE']
+    const msg=document.getElementById("msg")
+
+
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => response.json())
+			.then(response => {
+                msg.innerHTML="Message Sent Successfully!"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+			.catch(error => console.error('Error!', error.message))
+	})
+</script>
+</body>
+</html>
